@@ -13,7 +13,7 @@ def get_encoded_faces():
 
     encoded = {} # almacenara los nombres y codificaciones de las caras
 
-    for dirpath, dnames, fnames in os.walk("./imgs"):
+    for dirpath, dnames, fnames in os.walk("./faces"):
         for f in fnames:
             if f.endswith(".jpg") or f.endswith(".png"):
                 face = fr.load_image_file("imgs/" + f)
